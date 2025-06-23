@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dünya Mutfağı Tarifleri</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1514511011302-9da1c7c7a5d4?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#searchBar {
+    width: 60%;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 30px auto;
+    border-radius: 20px;
+    max-width: 1200px;
+}
+
+.recipe-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.recipe-card button {
+    background-color: #ff7043;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-card button:hover {
+    background-color: #ff5722;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dünya Mutfağı Tarifleri</h1>
+        <input type="text" id="searchBar" placeholder="Tarif ara...">
+    </header>
+    
+    <section id="recipe-list">
+        <!-- Tarifler burada yer alacak -->
+    </section>
+    
+    <footer>
+        <p>© 2025 Dünya Mutfağı</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
